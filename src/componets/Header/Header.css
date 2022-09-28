@@ -1,0 +1,14 @@
+.header-area {
+  background-color: #1c2b35;
+
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+.menu a {
+  color: #ffffff;
+}
+
+.menu a:hover {
+  color: #ffa500;
+}

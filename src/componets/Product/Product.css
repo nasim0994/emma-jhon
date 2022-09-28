@@ -1,0 +1,20 @@
+.card {
+  height: 480px;
+  position: relative;
+  padding: 7px;
+}
+.card img {
+  border-radius: 5px;
+}
+.card a {
+  width: 100%;
+}
+.card .btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.card-body {
+  padding: 14px 3px;
+}
