@@ -1,5 +1,4 @@
 import React from "react";
-import { removeFromDb } from "../../utilities/fakedb";
 import "./Cart.css";
 
 const Cart = ({ cart }) => {
@@ -15,6 +14,11 @@ const Cart = ({ cart }) => {
 
   let vat = parseFloat((price * 0.1).toFixed(2));
   let grandTotal = price + shipping + vat;
+
+  const clearCart = () => {
+    localStorage.clear("cart");
+    window.location.reload(false);
+  };
 
   return (
     <div className="cart-container">
@@ -50,7 +54,7 @@ const Cart = ({ cart }) => {
         </tbody>
       </table>
 
-      <button className="btn btn-danger mt-4">
+      <button className="btn btn-danger mt-4" onClick={clearCart}>
         Clear Cart <i className="far fa-trash-alt"></i>
       </button>
       <button className="btn btn-warning">
