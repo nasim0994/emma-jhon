@@ -20,6 +20,10 @@ const Cart = ({ cart }) => {
     window.location.reload(false);
   };
 
+  const ReviewPageHandel = () => {
+    alert("Page Upcoming");
+  };
+
   return (
     <div className="cart-container">
       <h4 className="text-center text-warning">Order Summary</h4>
@@ -57,7 +61,7 @@ const Cart = ({ cart }) => {
       <button className="btn btn-danger mt-4" onClick={clearCart}>
         Clear Cart <i className="far fa-trash-alt"></i>
       </button>
-      <button className="btn btn-warning">
+      <button className="btn btn-warning" onClick={ReviewPageHandel}>
         Review Order <i className="fas fa-arrow-right"></i>
       </button>
     </div>
